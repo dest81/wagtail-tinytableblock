@@ -14,10 +14,10 @@ class TinyTableBlockDefinition extends window.wagtailStreamField.blocks.FieldBlo
     };
 
     if (this.meta.enableLinks) {
-      plugins += " link autolink";
-      toolbar += " | link unlink";
-      contextmenu += " link";
-      valid_elements += ",a[href|rel|title|target]";
+      plugins += " wagtaillink link autolink";
+      toolbar = "wagtaillink unlink | " + toolbar;
+      contextmenu += " wagtaillink";
+      valid_elements += ",a[href|rel|title|target|linktype|id]";
     }
 
     if (this.meta.features) {

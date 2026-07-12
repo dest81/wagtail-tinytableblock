@@ -27,7 +27,7 @@ def sanitise_html(
     }
     if allow_links:
         tags |= {"a"}
-        attributes["a"] = {"href", "rel", "title", "target"}
+        attributes["a"] = {"href", "rel", "title", "target", "linktype", "id"}
 
     if features:
         feature_tags = {

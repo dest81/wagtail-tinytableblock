@@ -89,6 +89,7 @@ class TinyTableBlockAdapter(FieldBlockAdapter):
             *field_media._js,  # pylint: disable=protected-access
             "wagtail_tinytableblock/js/vendor/tinymce/tinymce.min.js",
             "wagtail_tinytableblock/js/tiny-table-block.js",
+            "wagtail_tinytableblock/js/tinymce-wagtail-link.js",
         ]
         return Media(js=js)
 
